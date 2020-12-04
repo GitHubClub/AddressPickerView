@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.example.addresspickerlib.beans.AddressInfo;
 import com.example.addresspickerlib.beans.YwpAddressBean;
 import com.example.addresspickerlib.callbacks.OnClickCallBack;
-import com.example.addresspickerlib.popus.popus.AddressPickerWindow;
+import com.example.addresspickerlib.popus.AddressPickerWindow;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;

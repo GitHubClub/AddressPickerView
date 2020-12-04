@@ -1,4 +1,4 @@
-package com.example.addresspickerlib.popus.popus;
+package com.example.addresspickerlib.popus;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
