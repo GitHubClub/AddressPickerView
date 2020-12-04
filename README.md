@@ -16,7 +16,7 @@ allprojects {
 
 dependencies {
 
-        implementation 'com.github.GitHubClub:AddressPickerView:1.0.1'
+        implementation 'com.github.GitHubClub:AddressPickerView:1.0.2'
         
 }
 
