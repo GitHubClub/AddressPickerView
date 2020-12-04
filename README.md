@@ -1,28 +1,27 @@
 AddressPickerLib
-仿京东地址选择器
+仿京东地址选择器弹框
 依赖方法
-
+allprojects {
+   repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+   }
+}
+dependencies {
+        implementation 'com.github.GitHubClub:AddressPickerView:1.0.0'
+}
 
 使用方法
-不管是用在popwindow上还是在activity或者fragment里面，都只要直接就在xml文件里面这么用就行了
-<com.example.addresspickerlib.views.AddressPickerView
-
-   android:id="@+id/apvAddress"
-
-   app:layout_constraintBottom_toBottomOf="parent"
-
-   android:layout_width="match_parent"
-
-   android:layout_height="wrap_content">
-</com.example.addresspickerlib.views.AddressPickerView>
-
-然后再设置一下回调就行了，如下
-addressView.setOnAddressPickerSure(new AddressPickerView.OnAddressPickerSureListener() {
+data为地址数据生成的bean，需要将接口返回的数据封装成YwpAddressBean格式的bean
+AddressPickerWindow payPopWindow = new AddressPickerWindow(this, data, new OnClickCallBack<AddressInfo>() {
+   @Override
+   public void onClick(int type, int index, AddressInfo addressInfo) {
+       Toast.makeText(MainActivity.this, addressInfo.getAddress(), Toast.LENGTH_SHORT).show();
+   }
 
    @Override
-   public void onSureClick(String address, String provinceCode, String cityCode, String districtCode) {
+   public void onDismiss() {
 
-       mTvAddress.setText(address);
-    
    }
 });
+payPopWindow.showPopupWindow(MainActivity.this.getWindow().getDecorView());
