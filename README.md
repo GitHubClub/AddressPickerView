@@ -13,7 +13,8 @@ dependencies {
 }
 
 使用方法
-data为地址数据生成的bean，需要将接口返回的数据封装成YwpAddressBean格式的bean
+data为地址数据生成的bean，需要将接口返回的数据封装成YwpAddressBean格式的bean。
+
 AddressPickerWindow payPopWindow = new AddressPickerWindow(this, data, new OnClickCallBack<AddressInfo>() {
    @Override
    public void onClick(int type, int index, AddressInfo addressInfo) {
