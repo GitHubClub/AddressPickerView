@@ -1,6 +1,7 @@
 AddressPickerLib
 仿京东地址选择器弹框
 依赖方法
+
 allprojects {
    repositories {
       ...
