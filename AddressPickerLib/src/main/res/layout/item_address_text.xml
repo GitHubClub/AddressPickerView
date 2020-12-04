@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="15dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:textColor="#262626"
+        android:textSize="14sp"
+        tools:text="新疆维吾尔自治区">
+
+
+    </TextView>
+</RelativeLayout>

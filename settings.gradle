@@ -1,0 +1,3 @@
+include ':AddressPickerLib'
+include ':app'
+rootProject.name = "AddressPickerView"
