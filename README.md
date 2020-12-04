@@ -3,13 +3,21 @@ AddressPickerView
 依赖方法
 
 allprojects {
+
    repositories {
+   
       ...
+      
       maven { url 'https://jitpack.io' }
+      
    }
+   
 }
+
 dependencies {
+
         implementation 'com.github.GitHubClub:AddressPickerView:1.0.0'
+        
 }
 
 使用方法
